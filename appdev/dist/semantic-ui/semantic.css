@@ -26271,3 +26271,20 @@ select.ui.dropdown {
 /*******************************
          Site Overrides
 *******************************/
+
+==========  Immobilise Bottom Bar  ==========
+.menu.row .column .ui.inverted.menu {
+    position: fixed;
+    bottom: 1rem;
+    border: 0 solid transparent;
+    background: #000;
+    box-shadow: none;
+    left: 1rem;
+    right: 1rem;
+}
+
+==========  Prevent Content From Going Under  ==========
+.main.row>.column {
+    max-height: calc(100vh - 6rem);
+    display: flex!important;
+    flex-direction: column;
